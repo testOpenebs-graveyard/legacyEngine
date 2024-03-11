@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: {{ include "legacyEngine.fullname" . }}
   labels:
+    where-am-i: graveyard
     {{- include "legacyEngine.labels" . | nindent 4 }}
 spec:
   selector:
@@ -15,6 +16,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
+        where-am-i: graveyard
         {{- include "legacyEngine.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
