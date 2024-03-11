@@ -1,0 +1,17 @@
+name: Release Helm Chart
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+**'
+
+jobs:
+  release-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Publish Helm chart
+        uses: stefanprodan/helm-gh-pages@v1.7.0
+        with:
+          token: ${{ secrets.LEGACY_ENGINES }}
+          charts_dir: .
