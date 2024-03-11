@@ -31,7 +31,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["/bin/sh"]
-          args: ["-c", "while true; do echo 'I am a legacy engine, nobody loves me.'; done"]
+          args: ["-c", "while true; do echo 'I am a legacy engine, nobody loves me.'; sleep 1; done"]
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
