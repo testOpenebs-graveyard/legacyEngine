@@ -29,7 +29,7 @@ entries:
     name: legacy-engine
     type: application
     urls:
-    - https://testOpenebs.github.io/legacyEngine/legacy-engine-1.0.1.tgz
+    - https://testOpenebs-graveyard.github.io/legacyEngine/legacy-engine-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
@@ -39,6 +39,6 @@ entries:
     name: legacy-engine
     type: application
     urls:
-    - https://testOpenebs.github.io/legacyEngine/legacy-engine-1.0.0.tgz
+    - https://testOpenebs-graveyard.github.io/legacyEngine/legacy-engine-1.0.0.tgz
     version: 1.0.0
 generated: "2024-03-11T11:34:57.803756106Z"
