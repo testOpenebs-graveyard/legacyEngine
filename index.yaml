@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   legacy-engine:
   - apiVersion: v2
+    appVersion: 1.0.3
+    created: "2024-03-11T11:29:56.279488769Z"
+    description: A Helm chart for Kubernetes
+    digest: fac43f1de3b215109ae791617ee03223cb0f75130c7269272f45646537abd7d0
+    name: legacy-engine
+    type: application
+    urls:
+    - https://testOpenebs-graveyard.github.io/legacyEngine/legacy-engine-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
     appVersion: 1.0.1
     created: "2024-03-11T10:56:20.216520461Z"
     description: A Helm chart for Kubernetes
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://testOpenebs.github.io/legacyEngine/legacy-engine-1.0.0.tgz
     version: 1.0.0
-generated: "2024-03-11T10:56:20.216081334Z"
+generated: "2024-03-11T11:29:56.278938876Z"
